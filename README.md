@@ -1,5 +1,15 @@
 # Lucid
-# Let's make a weather sensor with internet and Arduino
+# Let's make a weather sensor with live infomation and Arduino
+## Only using Node MCU and internet
+To acomplish this goal I can only make use of the Node MCU and internet to simulate a weather sensor.
+While looking for information online I realised most of the solutions for weather forecast are using rain sensors, humidity sensors and barometric sensors.
+So in order to 
+
+## How to make Arduino collect information online and display it in Serial monitor
+To learn how to do this, I searched online this exact question. This is what I found:
+https://www.circuitbasics.com/how-to-set-up-a-web-server-using-arduino-and-esp8266-01/
+This is a guide which explains how to show arduino data on a web page. Well, I actually need the opposite but it's a start.
+
 ## Required hardware
 1. Node MCU (ESP8266)
 <img width="198" alt=image src="https://github.com/Nikolai05/IoT3/blob/main/NodeMcu.jpg">
