@@ -7,8 +7,10 @@ So in order to
 
 ## How to make Arduino collect information online and display it in Serial monitor
 To learn how to do this, I searched online this exact question. This is what I found:
-https://www.circuitbasics.com/how-to-set-up-a-web-server-using-arduino-and-esp8266-01/
-This is a guide which explains how to show arduino data on a web page. Well, I actually need the opposite but it's a start.
+https://www.instructables.com/Make-ESP8266-Weather-Station/
+https://randomnerdtutorials.com/esp8266-weather-forecaster/
+
+
 
 ## Required hardware
 1. Node MCU (ESP8266)
