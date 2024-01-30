@@ -1,5 +1,7 @@
 # Lucid
+
 # Let's make a weather sensor with live infomation and Arduino
+
 ## Introduction
 In this article I’ll be guiding you through the process of connecting your ESP8266 to a live weather service in order to be able to display that on a screen.<br>
 
@@ -14,11 +16,13 @@ So in order to make this work I had to use a weather API to connect to the Ardui
 To learn how to do this, I searched online this exact question. This is what I found:
 https://www.instructables.com/Make-ESP8266-Weather-Station/
 
+
 ## Required hardware
 1. Node MCU (ESP8266)
 <img width="198" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/NodeMcu.jpg">
 2. USBc cable
 <img width="198" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/usbc.avif">
+
 
 ## Prepare Arduino IDE for ESP8266
 ### In case you haven't, install Arduino IDE. Once you have done that you can continue with these instructions.
@@ -38,6 +42,7 @@ https://www.instructables.com/Make-ESP8266-Weather-Station/
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Uploaded.PNG">
 9. You have succesfully tested your ESP8266 and connected it to the Arduino.
 
+
 ## Generating API with Weather information service
 1. Go to OpenWeatherMap (https://home.openweathermap.org/)
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/OWMhome.PNG">
@@ -48,13 +53,16 @@ https://www.instructables.com/Make-ESP8266-Weather-Station/
 5. Copy API key and paste in some document for later.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/APIopenweather.PNG">
 
+
 ## Code for Arduino to connect Weather Station 
 ### Below is the code for IoT Weather Station with NodeMCU OLED & OpenWeatherMap. 
 You will need 4 different libraries for that: Adafruit_GFX.h, Adafruit_SSD1306.h, OpenWeatherOneCall.h and ArduinoJson.h. You can get all these libraries from the Library Manager as shown in the figure below. Find them and install them.<br>
 <img width="198" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/librarymanager2.PNG">
+
 ### Let's get to configuring
 1. Go to the following link and copy the entire code (https://github.com/ThingPulse/esp8266-weather-station/blob/master/examples/OpenWeatherMapOneCallDemo/OpenWeatherMapOneCallDemo.ino)
-2. Create a file in Arduino and paste the code.
+2. Create a file in Arduino and paste the code as shown in the figure below.
+<img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/codepasted.PNG">
 3. Inside Enter your WIFI SSID, Password as show in figure below.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/enterwifiandssid.PNG">
 4. Then add the coordinates of your city. You can go to this adress and enter name of city you want coordinates from. The site wil generate a latitude and longitude.
@@ -66,25 +74,60 @@ You will need 4 different libraries for that: Adafruit_GFX.h, Adafruit_SSD1306.h
 7. Now you can upload this code to NodeMCU Board as shown figure below.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/uploadcode.PNG">
 
+
 ### Error shown in output when uploading code
 When uploading the previous code the following error was given.
 <img width="500" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Erroruploadcode.PNG"><br>
 Clearly the output indicates that the library JsonListener.h is missing.
 So we are going to go to library manager and install it.
 Apparently this library doesn't seem to exist as show in figure below.<br>
-<img width="198" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/nojsonlistener.PNG"><br>
+<img width="300" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/nojsonlistener.PNG"><br>
 So let's do some online reasearch and see what we can find.
 I found the following link: https://github.com/garretlab/DarkSky_uOLED-128-G2/issues/1
 In this link someone explains that the library "jsonlistener" can be substituted by "json streaming parser". So I installed this library and changed the #include as show in figure below.<br>
-<img width="198" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/jsonstreaming.PNG"><br>
+<img width="300" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/jsonstreaming.PNG"><br>
 Now let's upload the new code.
+
 
 ### New error!
 When uploading the new code the following error was given.<br>
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/noopenweathermaponecall.PNG"><br>
 Apparently the library OpenWeatherMapOneCall isn't installed.<br>
 But I most definitely have this library installed. I checked it for in case, and it was most certaintly installed as show in figure below.<br>
-<img width="198" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/mostdefinitelyinstalled.PNG"><br>
+<img width="300" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/mostdefinitelyinstalled.PNG"><br>
+I have realised that this library was between "" insted of <> so I switched that up as show in figure below.
+<img width="300" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/changedbrackets.PNG"><br>
+Now let's upload the code again and see if the problem is solved.<br>
+Same error is shown after uploading the updated code as shown in figure below.<br>
+<img width="300" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/stillsameerror.PNG"><br>
+
+## Trying new code file
+Searching up what this error could be due to, I stumbled into the following github site.---> https://github.com/JHershey69/OpenWeatherOneCall/blob/master/examples/Simple%20Latitude%20Longitude%20Weather/Simple_Latitude_Longitude_Weather_Example.ino
+I have decided to open up a new file, insert the coordinates, API key and wifi details in order to try to make it work.<br>
+Once this was done I uploaded the code.
+
+### Error again
+After uploading the new code with the specific details entered correctly I got the following error.<br>
+<img width="300" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/newcodeerror.PNG"><br>
+
+
+## Reflection
+
+
+## Sources
+Links for creating weatherstation using ESP8266:
+https://www.instructables.com/Make-ESP8266-Weather-Station/
+https://blog.squix.org/2015/05/esp8266-projects-internet-connected.html
+Link for OpenWeatherMap:
+https://home.openweathermap.org/
+Links for code used in Arduino:
+https://github.com/ThingPulse/esp8266-weather-station/blob/master/examples/OpenWeatherMapOneCallDemo/OpenWeatherMapOneCallDemo.ino
+https://github.com/JHershey69/OpenWeatherOneCall/blob/master/examples/Simple%20Latitude%20Longitude%20Weather/Simple_Latitude_Longitude_Weather_Example.ino
+Link for solving issue with missing library:
+https://github.com/garretlab/DarkSky_uOLED-128-G2/issues/1
+
+
+
 
 
 
