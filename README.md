@@ -28,8 +28,8 @@ https://www.instructables.com/Make-ESP8266-Weather-Station/
 4. To run the esp8266 with Arduino we have to select the Board: esp8266 modules depending on what you have .This can be done by scrolling down.
 5. Now Let’s connect the ESP8266 module to your computer through USB cable as shown in the figure. When module is connected to the USB, COM port will get detected.
 <img width="198" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Connectedpc.jpg">
-6. Now open the File tab, go to the Examples, go into Built-in example, go into "01.Basics" and select Blink to open the window.
-7. The Blink example will open on a new window , click on tools to select the port: “COM”, based on which esp8266 module is connected to your respected COM port of the computer.
+6. Now open the File tab, go to the Examples, go into Built-in example, go into "01.Basics" and select Blink to open the window. <br>
+7. The Blink example will open on a new window , click on tools to select the port: “COM”, based on which esp8266 module is connected to your respected COM port of the computer. <br>
 8. Upload the program to the module as shown in figure below. This will start blinking the on board led on the nodemcu module.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Uploaded.PNG">
 9. You have succesfully tested your ESP8266 and connected it to the Arduino.
@@ -37,8 +37,8 @@ https://www.instructables.com/Make-ESP8266-Weather-Station/
 ## Generating API with Weather information service
 1. Go to OpenWeatherMap (https://home.openweathermap.org/)
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/OWMhome.PNG">
-2. Create an account.
-3. Get account verified.
+2. Create an account. <br>
+3. Get account verified. <br>
 4. Go to profile and click on "My API keys" as shown in figure below.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/profile.PNG">
 5. Copy API key and paste in some document for later.
@@ -53,13 +53,13 @@ You will need 4 different libraries for that: Adafruit_GFX.h, Adafruit_SSD1306.h
 2. Create a file in Arduino and paste the code.
 3. Inside Enter your WIFI SSID, Password as show in figure below.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/enterwifiandssid.PNG">
-5. Then add the coordinates of your city. You can go to this adress and enter name of city you want coordinates from. The site wil generate a latitude and longitude.
+4. Then add the coordinates of your city. You can go to this adress and enter name of city you want coordinates from. The site wil generate a latitude and longitude.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/getcoordinates.PNG">
-7. Copy them and enter them in the file as shown in figure below.
+6. Copy them and enter them in the file as shown in figure below.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Entercoordinates.PNG">
-8. Also add the API key you copied from OpenWeatherMap as show in figure below.
+7. Also add the API key you copied from OpenWeatherMap as show in figure below.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Entercoordinates.PNG">
-10. Now you can upload this code to NodeMCU Board as shown figure below.
+8. Now you can upload this code to NodeMCU Board as shown figure below.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/uploadcode.PNG">
 
 ### Error shown in output when uploading code
