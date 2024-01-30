@@ -108,21 +108,26 @@ Once this was done I uploaded the code.
 
 ### Error again
 After uploading the new code with the specific details entered correctly I got the following error.<br>
-<img width="300" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/newcodeerror.PNG"><br>
+<img width="500" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/newcodeerror.PNG"><br>
+This time I can't find an explanation for the error not even after looking up what it could mean online.<br>
+Hereby I conclude my project as a failure which means I don't provide a completed manual.
 
 
 ## Reflection
+It seems I have failed to create a weather station by combining an API from a online weather information service and a ESP8266 module on Arduino.<br>
+This means I couldn't make this IoT project possible. But nevertheless I have learnt a lot by writting this manual which I would describe as a diary.<br>
+Use this manual as an example and try to make further research through articles and forums to acomplish your purpose.
 
 
 ## Sources
 Links for creating weatherstation using ESP8266:<br>
-https://www.instructables.com/Make-ESP8266-Weather-Station/<br>
-https://blog.squix.org/2015/05/esp8266-projects-internet-connected.html<br>
+1. https://www.instructables.com/Make-ESP8266-Weather-Station/<br>
+2. https://blog.squix.org/2015/05/esp8266-projects-internet-connected.html<br>
 Link for OpenWeatherMap:<br>
 https://home.openweathermap.org/<br>
 Links for code used in Arduino:<br>
-https://github.com/ThingPulse/esp8266-weather-station/blob/master/examples/OpenWeatherMapOneCallDemo/OpenWeatherMapOneCallDemo.ino<br>
-https://github.com/JHershey69/OpenWeatherOneCall/blob/master/examples/Simple%20Latitude%20Longitude%20Weather/Simple_Latitude_Longitude_Weather_Example.ino<br>
+1. https://github.com/ThingPulse/esp8266-weather-station/blob/master/examples/OpenWeatherMapOneCallDemo/OpenWeatherMapOneCallDemo.ino<br>
+2. https://github.com/JHershey69/OpenWeatherOneCall/blob/master/examples/Simple%20Latitude%20Longitude%20Weather/Simple_Latitude_Longitude_Weather_Example.ino<br>
 Link for solving issue with missing library:<br>
 https://github.com/garretlab/DarkSky_uOLED-128-G2/issues/1<br>
 
