@@ -1,6 +1,8 @@
 # Lucid
 # Let's make a weather sensor with live infomation and Arduino
 ## Introduction
+In this article I’ll be guiding you through the process of connecting your ESP8266 to a live weather service in order to be able to display that on a screen.
+<font color="green">Disclaimer!</font> The information in this article shoudn't be used as a proper manual. Consider this as documentation of my thinking proces with some helpfull tips and tricks.
 ### Only using Node MCU and internet
 To acomplish this goal I can only make use of the Node MCU and internet to simulate a weather sensor.
 While looking for information online I realised most of the solutions for weather forecast are using rain sensors, humidity sensors and barometric sensors.
@@ -46,7 +48,7 @@ https://www.instructables.com/Make-ESP8266-Weather-Station/
 
 ## Code for Arduino to connect Weather Station 
 ### Below is the code for IoT Weather Station with NodeMCU OLED & OpenWeatherMap. 
-You will need 4 different libraries for that: Adafruit_GFX.h, Adafruit_SSD1306.h, OpenWeatherOneCall.h and ArduinoJson.h. You can get all these libraries from the Library Manager as shown in the figure below. Find them and install them.
+You will need 4 different libraries for that: Adafruit_GFX.h, Adafruit_SSD1306.h, OpenWeatherOneCall.h and ArduinoJson.h. You can get all these libraries from the Library Manager as shown in the figure below. Find them and install them.<br>
 <img width="198" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/librarymanager2.PNG">
 ### Let's get to configuring
 1. Go to the following link and copy the entire code (https://github.com/ThingPulse/esp8266-weather-station/blob/master/examples/OpenWeatherMapOneCallDemo/OpenWeatherMapOneCallDemo.ino)
@@ -55,15 +57,18 @@ You will need 4 different libraries for that: Adafruit_GFX.h, Adafruit_SSD1306.h
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/enterwifiandssid.PNG">
 4. Then add the coordinates of your city. You can go to this adress and enter name of city you want coordinates from. The site wil generate a latitude and longitude.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/getcoordinates.PNG">
-6. Copy them and enter them in the file as shown in figure below.
+5. Copy them and enter them in the file as shown in figure below.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Entercoordinates.PNG">
-7. Also add the API key you copied from OpenWeatherMap as show in figure below.
+6. Also add the API key you copied from OpenWeatherMap as show in figure below.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Entercoordinates.PNG">
-8. Now you can upload this code to NodeMCU Board as shown figure below.
+7. Now you can upload this code to NodeMCU Board as shown figure below.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/uploadcode.PNG">
 
 ### Error shown in output when uploading code
 When uploading the previous code the following error was given.
-<img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Erroruploadcode.PNG">
+<img width="500" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Erroruploadcode.PNG">
+Clearly the output indicates that the library JsonListener.h is missing.
+So we are going to go to library manager and install it.
+Apparently this library doesn't seem to exist as show in figure below. So we are going to do some online reasearch.
 
  
