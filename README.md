@@ -115,16 +115,16 @@ After uploading the new code with the specific details entered correctly I got t
 
 
 ## Sources
-Links for creating weatherstation using ESP8266:
-https://www.instructables.com/Make-ESP8266-Weather-Station/
-https://blog.squix.org/2015/05/esp8266-projects-internet-connected.html
-Link for OpenWeatherMap:
-https://home.openweathermap.org/
-Links for code used in Arduino:
-https://github.com/ThingPulse/esp8266-weather-station/blob/master/examples/OpenWeatherMapOneCallDemo/OpenWeatherMapOneCallDemo.ino
-https://github.com/JHershey69/OpenWeatherOneCall/blob/master/examples/Simple%20Latitude%20Longitude%20Weather/Simple_Latitude_Longitude_Weather_Example.ino
-Link for solving issue with missing library:
-https://github.com/garretlab/DarkSky_uOLED-128-G2/issues/1
+Links for creating weatherstation using ESP8266:<br>
+https://www.instructables.com/Make-ESP8266-Weather-Station/<br>
+https://blog.squix.org/2015/05/esp8266-projects-internet-connected.html<br>
+Link for OpenWeatherMap:<br>
+https://home.openweathermap.org/<br>
+Links for code used in Arduino:<br>
+https://github.com/ThingPulse/esp8266-weather-station/blob/master/examples/OpenWeatherMapOneCallDemo/OpenWeatherMapOneCallDemo.ino<br>
+https://github.com/JHershey69/OpenWeatherOneCall/blob/master/examples/Simple%20Latitude%20Longitude%20Weather/Simple_Latitude_Longitude_Weather_Example.ino<br>
+Link for solving issue with missing library:<br>
+https://github.com/garretlab/DarkSky_uOLED-128-G2/issues/1<br>
 
 
 
