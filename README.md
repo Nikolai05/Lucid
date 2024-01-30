@@ -37,8 +37,8 @@ https://www.instructables.com/Make-ESP8266-Weather-Station/
 ## Generating API with Weather information service
 1. Go to OpenWeatherMap (https://home.openweathermap.org/)
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/OWMhome.PNG">
-2. Create an account
-3. Get account verified
+2. Create an account.
+3. Get account verified.
 4. Go to profile and click on "My API keys" as shown in figure below.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/profile.PNG">
 5. Copy API key and paste in some document for later.
