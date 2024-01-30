@@ -68,23 +68,24 @@ You will need 4 different libraries for that: Adafruit_GFX.h, Adafruit_SSD1306.h
 
 ### Error shown in output when uploading code
 When uploading the previous code the following error was given.
-<img width="500" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Erroruploadcode.PNG">
+<img width="500" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Erroruploadcode.PNG"><br>
 Clearly the output indicates that the library JsonListener.h is missing.
 So we are going to go to library manager and install it.
 Apparently this library doesn't seem to exist as show in figure below.<br>
-<img width="500" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/nojsonlistener.PNG">
+<img width="198" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/nojsonlistener.PNG"><br>
 So let's do some online reasearch and see what we can find.
 I found the following link: https://github.com/garretlab/DarkSky_uOLED-128-G2/issues/1
-In this link someone explains that the library "jsonlistener" can be substituted by "json streaming parser". So I installed this library and changed the #include as show in figure below.
-<img width="500" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/jsonstreaming.PNG"><br>
+In this link someone explains that the library "jsonlistener" can be substituted by "json streaming parser". So I installed this library and changed the #include as show in figure below.<br>
+<img width="198" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/jsonstreaming.PNG"><br>
 Now let's upload the new code.
 
 ### New error!
 When uploading the new code the following error was given.<br>
-<img width="500" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/noopenweathermaponecall.PNG">
+<img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/noopenweathermaponecall.PNG"><br>
 Apparently the library OpenWeatherMapOneCall isn't installed.<br>
 But I most definitely have this library installed. I checked it for in case, and it was most certaintly installed as show in figure below.<br>
-<img width="500" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/mostdefinitelyinstalled.PNG">
+<img width="198" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/mostdefinitelyinstalled.PNG"><br>
+
 
 
  
