@@ -1,6 +1,7 @@
 # Lucid
 # Let's make a weather sensor with live infomation and Arduino
-## Only using Node MCU and internet
+## Introduction
+### Only using Node MCU and internet
 To acomplish this goal I can only make use of the Node MCU and internet to simulate a weather sensor.
 While looking for information online I realised most of the solutions for weather forecast are using rain sensors, humidity sensors and barometric sensors.
 So in order to make this work I had to use a weather API to connect to the Arduino.
@@ -15,14 +16,9 @@ https://www.instructables.com/Make-ESP8266-Weather-Station/
 2. USBc cable
 <img width="198" alt=image src="https://github.com/Nikolai05/IoT3/blob/main/usbc.avif">
 
-## Weather information service
-1. Go to OpenWeatherMap (https://home.openweathermap.org/)
-2. Create an account
-3. Get account verified
-4. Copy API key
-
 ## Prepare Arduino IDE for ESP8266
 ### In case you haven't, install Arduino IDE. Once you have done that you can continue with these instructions.
+#### The ESP8266 module isn't part of the Arduino-IDE. So we got to install it first.
 1. Go to file and select preferences.
 2. Adding ESP8266 Board Manager:
    2.1. In the Additional Boards Manager enter the following URL---> http://arduino.esp8266.com/stable/package_esp8266com_index.json
@@ -35,7 +31,15 @@ https://www.instructables.com/Make-ESP8266-Weather-Station/
 8. On the blink example code change all number 13 to number 16 and then click on the right arrow shown in the figure to upload the program to the module. This will start blinking the on board led on the nodemcu module.
 9. You have succesfully tested your ESP8266 and connected it to the Arduino.
 
-##
+## Generating API with Weather information service
+1. Go to OpenWeatherMap (https://home.openweathermap.org/)
+2. Create an account
+3. Get account verified
+4. Copy API key
+5. Select the city and country code by entering your city name. Example: Amsterdam, NL where Amsterdam is a city, and NL is a country code for the Netherlands. (Important!) City name and country code need to be entered on code.
+
+## Code for Arduino to connect Weather Station 
+Below is the code for IoT Weather Station with NodeMCU OLED & OpenWeatherMap. You will need 3 different libraries for that: Adafruit_GFX.h, Adafruit_SSD1306.h and ArduinoJson.h. You can get all these libraries from the Library Manager as shown in the figure below.
 
 
  
