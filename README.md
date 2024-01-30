@@ -20,16 +20,16 @@ https://www.instructables.com/Make-ESP8266-Weather-Station/
 ### In case you haven't, install Arduino IDE. Once you have done that you can continue with these instructions.
 #### The ESP8266 module isn't part of the Arduino-IDE. So we got to install it first.
 1. Go to file and select preferences.
-2. Adding ESP8266 Board Manager:
+2. Adding ESP8266 Board Manager:  
    2.1. In the Additional Boards Manager enter the following URL---> http://arduino.esp8266.com/stable/package_esp8266com_index.json
    2.2. Press the OK button.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/preferences.PNG">
-3. Now open the tools in that select Board: “Arduino/Genuino Uno” and click on the Boards Manager. The Boards Manager window opens, scroll to the bottom of the window page till you see the module with the name ESP8266. Select that module and select a version, then click on the Install button. When it is installed it shows Installed in the module.
-4. To run the esp8266 with Arduino we have to select the Board: esp8266 modules depending on what you have .This can be done by scrolling down.
+3. Now open the tools in that select Board: “Arduino/Genuino Uno” and click on the Boards Manager. The Boards Manager window opens, scroll to the bottom of the window page till you see the module with the name ESP8266. Select that module and select a version, then click on the Install button. When it is installed it shows Installed in the module.  
+4. To run the esp8266 with Arduino we have to select the Board: esp8266 modules depending on what you have .This can be done by scrolling down.  
 5. Now Let’s connect the ESP8266 module to your computer through USB cable as shown in the figure. When module is connected to the USB, COM port will get detected.
 <img width="198" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Connectedpc.jpg">
-6. Now open the File tab, go to the Examples, go into Built-in example, go into "01.Basics" and select Blink to open the window. <br>
-7. The Blink example will open on a new window , click on tools to select the port: “COM”, based on which esp8266 module is connected to your respected COM port of the computer. <br>
+6. Now open the File tab, go to the Examples, go into Built-in example, go into "01.Basics" and select Blink to open the window.  
+7. The Blink example will open on a new window , click on tools to select the port: “COM”, based on which esp8266 module is connected to your respected COM port of the computer.  
 8. Upload the program to the module as shown in figure below. This will start blinking the on board led on the nodemcu module.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Uploaded.PNG">
 9. You have succesfully tested your ESP8266 and connected it to the Arduino.
@@ -37,8 +37,8 @@ https://www.instructables.com/Make-ESP8266-Weather-Station/
 ## Generating API with Weather information service
 1. Go to OpenWeatherMap (https://home.openweathermap.org/)
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/OWMhome.PNG">
-2. Create an account. <br>
-3. Get account verified. <br>
+2. Create an account.  
+3. Get account verified.  
 4. Go to profile and click on "My API keys" as shown in figure below.
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/profile.PNG">
 5. Copy API key and paste in some document for later.
