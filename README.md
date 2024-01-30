@@ -99,7 +99,7 @@ I have realised that this library was between "" insted of <> so I switched that
 <img width="300" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/changedbrackets.PNG"><br>
 Now let's upload the code again and see if the problem is solved.<br>
 Same error is shown after uploading the updated code as shown in figure below.<br>
-<img width="300" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/stillsameerror.PNG"><br>
+<img width="300" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/stillsameissue.PNG"><br>
 
 ## Trying new code file
 Searching up what this error could be due to, I stumbled into the following github site.---> https://github.com/JHershey69/OpenWeatherOneCall/blob/master/examples/Simple%20Latitude%20Longitude%20Weather/Simple_Latitude_Longitude_Weather_Example.ino
