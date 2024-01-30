@@ -30,7 +30,7 @@ https://www.instructables.com/Make-ESP8266-Weather-Station/
 <img width="400" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/preferences.PNG">
 3. Now open the tools in that select Board: “Arduino/Genuino Uno” and click on the Boards Manager. The Boards Manager window opens, scroll to the bottom of the window page till you see the module with the name ESP8266. Select that module and select a version, then click on the Install button. When it is installed it shows Installed in the module.<br>
 4. To run the esp8266 with Arduino we have to select the Board: esp8266 modules depending on what you have .This can be done by scrolling down.<br>
-5. Now Let’s connect the ESP8266 module to your computer through USB cable as shown in the figure. When module is connected to the USB, COM port will get detected.
+5. Now Let’s connect the ESP8266 module to your computer through USB cable as shown in the figure below. When module is connected to the USB, COM port will get detected.
 <img width="198" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Connectedpc.jpg">
 6. Now open the File tab, go to the Examples, go into Built-in example, go into "01.Basics" and select Blink to open the window.<br>
 7. The Blink example will open on a new window , click on tools to select the port: “COM”, based on which esp8266 module is connected to your respected COM port of the computer.<br>
@@ -71,6 +71,20 @@ When uploading the previous code the following error was given.
 <img width="500" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/Erroruploadcode.PNG">
 Clearly the output indicates that the library JsonListener.h is missing.
 So we are going to go to library manager and install it.
-Apparently this library doesn't seem to exist as show in figure below. So we are going to do some online reasearch.
+Apparently this library doesn't seem to exist as show in figure below.
+<img width="500" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/nojsonlistener.PNG">
+So let's do some online reasearch and see what we can find.
+I found the following link: https://github.com/garretlab/DarkSky_uOLED-128-G2/issues/1
+In this link someone explains that the library "jsonlistener" can be substituted by "json streaming parser". So I installed this library and changed the #include as show in figure below.
+<img width="500" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/jsonstreaming.PNG">
+No let's upload the new code.
+
+### New error!
+When uploading the new code the following error was given.
+<img width="500" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/noopenweathermaponecall.PNG">
+Apparently the library OpenWeatherMapOneCall isn't installed.<br>
+But I most definitely have this library installed. I checked it for in case, and it was most certaintly installed as show in figure below.
+<img width="500" alt=image src="https://github.com/Nikolai05/Lucid/blob/main/mostdefinitelyinstalled.PNG">
+
 
  
