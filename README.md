@@ -1,8 +1,8 @@
 # Lucid
 # Let's make a weather sensor with live infomation and Arduino
 ## Introduction
-In this article I’ll be guiding you through the process of connecting your ESP8266 to a live weather service in order to be able to display that on a screen.
-<font color="green">Disclaimer!</font> The information in this article shoudn't be used as a proper manual. Consider this as documentation of my thinking proces with some helpfull tips and tricks.
+In this article I’ll be guiding you through the process of connecting your ESP8266 to a live weather service in order to be able to display that on a screen.<br>
+### Disclaimer! The information in this article shoudn't be used as a proper manual. Consider this as documentation of my thinking proces with some helpfull tips and tricks.
 ### Only using Node MCU and internet
 To acomplish this goal I can only make use of the Node MCU and internet to simulate a weather sensor.
 While looking for information online I realised most of the solutions for weather forecast are using rain sensors, humidity sensors and barometric sensors.
